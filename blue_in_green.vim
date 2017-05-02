@@ -91,7 +91,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 
 	hi Cursor         ctermbg=208  ctermfg=16	guibg=#ff9800 guifg=#000000
 	hi CursorColumn   ctermbg=237  ctermfg=NONE guibg=#3a3a3a guifg=NONE
-	hi CursorLineNr   ctermbg=237  ctermfg=73   guibg=#3a3a3a guifg=#9ccc65
+	hi CursorLineNr   ctermbg=NONE ctermfg=73   guibg=NONE    guifg=#9ccc65
 	hi CursorLine     ctermbg=237  ctermfg=NONE guibg=#3a3a3a guifg=NONE
 
 	hi IncSearch      ctermbg=131  ctermfg=46   guibg=NONE	guifg=#8bc34a
