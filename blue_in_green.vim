@@ -41,7 +41,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	" Variables (identifiers in Vim) are orange; function names are blue.
 	" Some Vim syntax files, including c.vim, do not define these groups.
 	hi Identifier     ctermbg=NONE ctermfg=166  guibg=NONE guifg=#ffcc80
-	hi Function       ctermbg=NONE ctermfg=86      guibg=NONE guifg=#84ffff
+	hi Function       ctermbg=NONE ctermfg=86   guibg=NONE guifg=#84ffff
 
 	" Statement - yellow
 	hi Statement      ctermbg=NONE ctermfg=235  guibg=NONE guifg=#fff59d gui=NONE
@@ -94,7 +94,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi CursorLineNr   ctermbg=NONE ctermfg=73   guibg=NONE    guifg=#9ccc65
 	hi CursorLine     ctermbg=237  ctermfg=NONE guibg=#3a3a3a guifg=NONE
 
-	hi IncSearch      ctermbg=131  ctermfg=46   guibg=NONE	guifg=#8bc34a
 	hi DiffAdd        ctermbg=235  ctermfg=108  guibg=NONE guifg=#87af87
 	hi diffAdded      ctermbg=235  ctermfg=108  guibg=NONE guifg=#87af87
 	hi DiffChange     ctermbg=235  ctermfg=103  guibg=NONE guifg=#8787af
@@ -103,6 +102,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi diffRemoved    ctermbg=235  ctermfg=131  guibg=NONE guifg=#af5f5f
 	hi DiffText       ctermbg=235  ctermfg=208  guibg=NONE guifg=#ff8700
 
+	hi IncSearch      ctermbg=131  ctermfg=46   guibg=NONE	  guifg=#8bc34a
 	hi Search		  ctermbg=46   ctermfg=231  guibg=#8bc34a guifg=#ffffff
 
 	hi Pmenu          ctermbg=237  ctermfg=46   guibg=#3a3a3a guifg=#ffffff
@@ -121,10 +121,10 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi VisualNOS      ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=underline gui=underline
 
 	" Write good
-	hi SpellBad   guisp=#bc6c4c guifg=NONE ctermfg=red   ctermbg=237cterm=undercurl gui=undercurl
-	hi SpellCap   guisp=#6c6c9c guifg=NONE ctermfg=blue  ctermbg=237cterm=undercurl gui=undercurl
-	hi SpellRare  guisp=#bc6c9c guifg=NONE ctermfg=128   ctermbg=237cterm=undercurl gui=undercurl
-	hi SpellLocal guisp=#7cac7c guifg=NONE ctermfg=green ctermbg=237cterm=undercurl gui=undercurl
+	hi SpellBad   guisp=#bc6c4c guifg=NONE ctermfg=red   ctermbg=237 cterm=undercurl gui=undercurl
+	hi SpellCap   guisp=#6c6c9c guifg=NONE ctermfg=blue  ctermbg=237 cterm=undercurl gui=undercurl
+	hi SpellRare  guisp=#bc6c9c guifg=NONE ctermfg=128   ctermbg=237 cterm=undercurl gui=undercurl
+	hi SpellLocal guisp=#7cac7c guifg=NONE ctermfg=green ctermbg=237 cterm=undercurl gui=undercurl
 
 	" Menus, etc ...
 	hi Directory        ctermbg=NONE ctermfg=86   guibg=NONE    guifg=#84ffff
