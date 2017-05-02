@@ -7,7 +7,7 @@ Which in turn is based on Google's Material Design:
 
 	https://material.io/guidelines/style/color.html#
 
-This is a dark theme.
+![This is a dark theme.](blue_in_green.png)
 
 It does not support terminals without 256 color support.
 
