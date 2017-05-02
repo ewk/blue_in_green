@@ -95,6 +95,14 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi CursorLine     ctermbg=237  ctermfg=NONE guibg=#3a3a3a guifg=NONE
 
 	hi IncSearch      ctermbg=131  ctermfg=46   guibg=NONE	guifg=#8bc34a
+	hi DiffAdd        ctermbg=235  ctermfg=108  guibg=NONE guifg=#87af87
+	hi diffAdded      ctermbg=235  ctermfg=108  guibg=NONE guifg=#87af87
+	hi DiffChange     ctermbg=235  ctermfg=103  guibg=NONE guifg=#8787af
+	hi diffChanged    ctermbg=235  ctermfg=103  guibg=NONE guifg=#8787af
+	hi DiffDelete     ctermbg=235  ctermfg=131  guibg=NONE guifg=#af5f5f
+	hi diffRemoved    ctermbg=235  ctermfg=131  guibg=NONE guifg=#af5f5f
+	hi DiffText       ctermbg=235  ctermfg=208  guibg=NONE guifg=#ff8700
+
 	hi Search		  ctermbg=46   ctermfg=231  guibg=#8bc34a guifg=#ffffff
 
 	hi Pmenu          ctermbg=237  ctermfg=46   guibg=#3a3a3a guifg=#ffffff
