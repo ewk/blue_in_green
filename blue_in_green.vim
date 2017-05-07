@@ -138,3 +138,13 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi helpLeadBlank    ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE
 	hi helpNormal       ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE
 endif
+
+hi link htmlEndTag               htmlTagName
+hi link htmlLink                 Function
+hi link htmlSpecialTagName       htmlTagName
+hi link htmlTag                  htmlTagName
+hi link htmlBold                 Normal
+hi link htmlItalic               Normal
+hi link xmlTag                   Statement
+hi link xmlTagName               Statement
+hi link xmlEndTag                Statement
