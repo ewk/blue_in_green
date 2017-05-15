@@ -81,7 +81,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 
 	" Comment and Todo: keywords TODO FIXME and XXX
 	hi Comment        ctermbg=NONE ctermfg=7    guibg=NONE guifg=#b0bec5
-	hi Todo           ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE    cterm=reverse gui=reverse
+	hi Todo           ctermbg=NONE ctermfg=NONE guibg=NONE guifg=#ffffff
 
 	"Underlined	text that stands out, HTML links
 	hi Underlined     ctermbg=NONE ctermfg=66   guibg=NONE guifg=#5f8787 cterm=underline gui=underline
