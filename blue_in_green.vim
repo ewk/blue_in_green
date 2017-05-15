@@ -16,7 +16,7 @@ if exists("syntax_on")
 	syntax reset
 endif
 
-let colors_name = "blueInGreen"
+let colors_name = "blue_in_green"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	" Core syntax groups
