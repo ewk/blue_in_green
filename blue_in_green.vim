@@ -77,22 +77,22 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi SpecialKey     ctermbg=NONE ctermfg=240  guibg=NONE guifg=#585858
 	hi NonText        ctermbg=NONE ctermfg=240  guibg=NONE guifg=#585858
 	hi Ignore         ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
-	hi Conceal        ctermbg=NONE ctermfg=231  guibg=NONE guifg=#ffffff
+	hi Conceal        ctermbg=NONE ctermfg=15   guibg=NONE guifg=#ffffff
 
 	" Comment and Todo: keywords TODO FIXME and XXX
-	hi Comment        ctermbg=NONE ctermfg=7    guibg=NONE guifg=#b0bec5
-	hi Todo           ctermbg=NONE ctermfg=NONE guibg=NONE guifg=#ffffff
+	hi Comment        ctermbg=NONE ctermfg=188  guibg=NONE guifg=#b0bec5
+	hi Todo           ctermbg=NONE ctermfg=15   guibg=NONE guifg=#ffffff
 
 	"Underlined	text that stands out, HTML links
 	hi Underlined     ctermbg=NONE ctermfg=66   guibg=NONE guifg=#5f8787 cterm=underline gui=underline
 
 	" Error: any erroneous construct
-	hi Error          ctermbg=NONE ctermfg=235  guibg=NONE guifg=#f36c60 cterm=reverse gui=reverse
+	hi Error          ctermbg=NONE ctermfg=162  guibg=NONE guifg=#f36c60 cterm=reverse gui=reverse
 
-	hi Cursor         ctermbg=208  ctermfg=16	guibg=#ff9800 guifg=#000000
+	hi Cursor         ctermbg=208  ctermfg=0	guibg=#ff9800 guifg=#000000
 	hi CursorColumn   ctermbg=237  ctermfg=NONE guibg=#3a3a3a guifg=NONE
-	hi CursorLineNr   ctermbg=NONE ctermfg=73   guibg=NONE    guifg=#9ccc65
-	hi CursorLine     ctermbg=237  ctermfg=NONE guibg=#3a3a3a guifg=NONE
+	hi CursorLineNr   ctermbg=NONE ctermfg=10   guibg=NONE    guifg=#9ccc65
+	hi CursorLine     ctermbg=237  ctermfg=NONE guibg=#3a3a3a guifg=NONE cterm=NONE
 
 	hi DiffAdd        ctermbg=235  ctermfg=108  guibg=NONE guifg=#87af87
 	hi diffAdded      ctermbg=235  ctermfg=108  guibg=NONE guifg=#87af87
@@ -102,41 +102,42 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi diffRemoved    ctermbg=235  ctermfg=131  guibg=NONE guifg=#af5f5f
 	hi DiffText       ctermbg=235  ctermfg=208  guibg=NONE guifg=#ff8700
 
-	hi IncSearch      ctermbg=131  ctermfg=46   guibg=NONE	  guifg=#8bc34a
-	hi Search		  ctermbg=46   ctermfg=231  guibg=#8bc34a guifg=#ffffff
 
-	hi Pmenu          ctermbg=237  ctermfg=46   guibg=#3a3a3a guifg=#ffffff
-	hi PmenuSbar      ctermbg=7    ctermfg=NONE guibg=#b0bec5 guifg=NONE
-	hi PmenuSel       ctermbg=86   ctermfg=235  guibg=#84ffff guifg=#555555
-	hi PmenuThumb     ctermbg=86   ctermfg=86   guibg=#84ffff guifg=#84ffff
+	hi IncSearch      ctermbg=131  ctermfg=10   guibg=NONE	  guifg=#8bc34a
+	hi Search		  ctermbg=10   ctermfg=15   guibg=#8bc34a guifg=#ffffff
 
-	hi StatusLine     ctermbg=237  ctermfg=46   guibg=#3a3a3a guifg=#ffffff gui=NONE
-	hi StatusLineNC   ctermbg=237  ctermfg=46   guibg=#3a3a3a guifg=#ffffff cterm=NONE gui=italic
+	hi Pmenu          ctermbg=237  ctermfg=15   guibg=#3a3a3a guifg=#ffffff
+	hi PmenuSbar      ctermbg=188  ctermfg=NONE guibg=#b0bec5 guifg=NONE
+	hi PmenuSel       ctermbg=159  ctermfg=240  guibg=#84ffff guifg=#555555
+	hi PmenuThumb     ctermbg=159  ctermfg=159  guibg=#84ffff guifg=#84ffff
 
-	hi TabLine        ctermbg=237  ctermfg=46   guibg=#3a3a3a guifg=#ffffff
+	hi StatusLine     ctermbg=237  ctermfg=15   guibg=#3a3a3a guifg=#ffffff gui=NONE
+	hi StatusLineNC   ctermbg=237  ctermfg=15   guibg=#3a3a3a guifg=#ffffff cterm=NONE gui=italic
+
+	hi TabLine        ctermbg=237  ctermfg=15   guibg=#3a3a3a guifg=#ffffff
 	hi TabLineFill    ctermbg=237  ctermfg=237  guibg=#3a3a3a guifg=#3a3a3a
-	hi TabLineSel     ctermbg=46   ctermfg=235  guibg=#ffffff guifg=#555555
+	hi TabLineSel     ctermbg=15   ctermfg=240  guibg=#ffffff guifg=#555555
 
-	hi Visual         ctermbg=235  ctermfg=110  guibg=#555555 guifg=NONE
+	hi Visual         ctermbg=240  ctermfg=NONE guibg=#555555 guifg=NONE
 	hi VisualNOS      ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=underline gui=underline
 
 	" Write good
-	hi SpellBad   guisp=#bc6c4c guifg=NONE ctermfg=red   ctermbg=237 cterm=undercurl gui=undercurl
-	hi SpellCap   guisp=#6c6c9c guifg=NONE ctermfg=blue  ctermbg=237 cterm=undercurl gui=undercurl
-	hi SpellRare  guisp=#bc6c9c guifg=NONE ctermfg=128   ctermbg=237 cterm=undercurl gui=undercurl
-	hi SpellLocal guisp=#7cac7c guifg=NONE ctermfg=green ctermbg=237 cterm=undercurl gui=undercurl
+	hi SpellBad   guisp=#bc6c4c guifg=NONE ctermfg=202  ctermbg=237 cterm=NONE gui=undercurl
+	hi SpellCap   guisp=#6c6c9c guifg=NONE ctermfg=141  ctermbg=237 cterm=undercurl gui=undercurl
+	hi SpellRare  guisp=#bc6c9c guifg=NONE ctermfg=202  ctermbg=237 cterm=NONE gui=undercurl
+	hi SpellLocal guisp=#7cac7c guifg=NONE ctermfg=108  ctermbg=237 cterm=undercurl gui=undercurl
 
 	" Menus, etc ...
-	hi Directory        ctermbg=NONE ctermfg=86   guibg=NONE    guifg=#84ffff
-	hi ErrorMsg         ctermbg=131  ctermfg=235  guibg=NONE	guifg=#f36c60
-	hi ModeMsg          ctermbg=108  ctermfg=235  guibg=#263238 guifg=#fff59d
-	hi MoreMsg          ctermbg=NONE ctermfg=86   guibg=NONE    guifg=#84ffff
-	hi Question         ctermbg=NONE ctermfg=81   guibg=NONE    guifg=#4dd0e1
-	hi Title            ctermbg=NONE ctermfg=147  guibg=NONE    guifg=#b39ddb
-	hi VertSplit        ctermbg=237  ctermfg=237  guibg=#3a3a3a guifg=#3a3a3a
-	hi WarningMsg       ctermbg=NONE ctermfg=208  guibg=NONE    guifg=#ff9800
-	hi helpLeadBlank    ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE
-	hi helpNormal       ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE
+	hi Directory        ctermbg=NONE ctermfg=159   guibg=NONE    guifg=#84ffff
+	hi ErrorMsg         ctermbg=131  ctermfg=162   guibg=NONE    guifg=#f36c60
+	hi ModeMsg          ctermbg=0    ctermfg=228   guibg=#263238 guifg=#fff59d
+	hi MoreMsg          ctermbg=NONE ctermfg=159   guibg=NONE    guifg=#84ffff
+	hi Question         ctermbg=NONE ctermfg=117   guibg=NONE    guifg=#4dd0e1
+	hi Title            ctermbg=NONE ctermfg=141   guibg=NONE    guifg=#b39ddb
+	hi VertSplit        ctermbg=237  ctermfg=237   guibg=#3a3a3a guifg=#3a3a3a
+	hi WarningMsg       ctermbg=NONE ctermfg=208   guibg=NONE    guifg=#ff9800
+	hi helpLeadBlank    ctermbg=NONE ctermfg=NONE  guibg=NONE    guifg=NONE
+	hi helpNormal       ctermbg=NONE ctermfg=NONE  guibg=NONE    guifg=NONE
 endif
 
 hi link htmlEndTag               htmlTagName
