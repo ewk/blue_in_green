@@ -20,31 +20,31 @@ let colors_name = "blue_in_green"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	" Core syntax groups
-	hi Normal         ctermbg=235  ctermfg=231  guibg=#263238 guifg=#ffffff
-	hi LineNr         ctermbg=235  ctermfg=249  guibg=#263238 guifg=#a7adba
-	hi FoldColumn     ctermbg=235  ctermfg=7    guibg=#263238 guifg=#b0bec5
-	hi Folded         ctermbg=235  ctermfg=7    guibg=#263238 guifg=#b0bec5
-	hi MatchParen     ctermbg=86   ctermfg=16   guibg=#81d4fa guifg=#000000
-	hi signColumn     ctermbg=235  ctermfg=7    guibg=#263238 guifg=#b0bec5
+	hi Normal         ctermbg=0   ctermfg=15   guibg=#263238 guifg=#ffffff
+	hi LineNr         ctermbg=0   ctermfg=109  guibg=#263238 guifg=#a7adba
+	hi FoldColumn     ctermbg=0   ctermfg=188  guibg=#263238 guifg=#b0bec5
+	hi Folded         ctermbg=0   ctermfg=188  guibg=#263238 guifg=#b0bec5
+	hi MatchParen     ctermbg=45  ctermfg=0    guibg=#81d4fa guifg=#000000
+	hi signColumn     ctermbg=0   ctermfg=188  guibg=#263238 guifg=#b0bec5
 
 	" Common syntax groups for programming languages
 	" See :help group-name
 	"
 	" Constant - green
-	hi Constant       ctermbg=NONE ctermfg=46  guibg=NONE guifg=#8bc34a
-	hi String         ctermbg=NONE ctermfg=46  guibg=NONE guifg=#9ccc65
+	hi Constant       ctermbg=NONE ctermfg=10  guibg=NONE guifg=#8bc34a
+	hi String         ctermbg=NONE ctermfg=10  guibg=NONE guifg=#9ccc65
 	hi link Character              Constant
 	hi link Number                 Constant
 	hi link Boolean                Constant
 	hi link Float                  Constant
 
-	" Variables (identifiers in Vim) are orange; function names are blue.
+	" Variables (identifiers in Vim) are blue; function names are orange.
 	" Some Vim syntax files, including c.vim, do not define these groups.
-	hi Identifier     ctermbg=NONE ctermfg=166  guibg=NONE guifg=#ffcc80
-	hi Function       ctermbg=NONE ctermfg=86   guibg=NONE guifg=#84ffff
+	hi Function     ctermbg=NONE ctermfg=215  guibg=NONE guifg=#ffcc80
+	hi Identifier   ctermbg=NONE ctermfg=159  guibg=NONE guifg=#84ffff cterm=NONE gui=NONE
 
 	" Statement - yellow
-	hi Statement      ctermbg=NONE ctermfg=235  guibg=NONE guifg=#fff59d gui=NONE
+	hi Statement      ctermbg=NONE ctermfg=228  guibg=NONE guifg=#fff59d gui=NONE
 	hi link Conditional            Statement
 	hi link Repeat				   Statement
 	hi link Label                  Statement
@@ -53,14 +53,14 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi link Exception			   Statement
 
 	" Preprocessor - gold
-	hi PreProc        ctermbg=NONE ctermfg=220 guibg=NONE guifg=#ffd700
+	hi PreProc        ctermbg=NONE ctermfg=220  guibg=NONE guifg=#ffd700
 	hi link Include                PreProc
 	hi link Define                 PreProc
 	hi link Macro                  PreProc
 	hi link PreCondit              PreProc
 
 	" Type: int, long, char, etc. - aqua
-	hi Type           ctermbg=NONE ctermfg=86  guibg=NONE guifg=#84ffff gui=NONE
+	hi Type           ctermbg=NONE ctermfg=159  guibg=NONE guifg=#84ffff gui=NONE
 	hi link StorageClass           Statement
 	hi link Structure              Statement
 	hi link Typedef                Type
