@@ -1,10 +1,8 @@
 " Vim color file
 " Maintainer: Eddie Kovsky
-" Version: 0.98
+" Version: 1.0
 " License: GPLv2
 "
-" TODO:
-" Terminal colors still need a lot of work.
 
 if has("gui_running")
     set background=dark
