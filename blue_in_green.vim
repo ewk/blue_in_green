@@ -93,13 +93,15 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi CursorLine     ctermbg=237  ctermfg=NONE guibg=#3a3a3a guifg=NONE cterm=NONE
 
 	" Diff mode
-	hi diffAdd        ctermbg=NONE ctermfg=10   guibg=NONE    guifg=#8bc34a
-	hi diffChange     ctermbg=NONE ctermfg=159  guibg=NONE    guifg=#ff5722
-	hi diffDelete     ctermbg=NONE ctermfg=162  guibg=NONE    guifg=#f36c60
-	hi DiffText       ctermbg=237  ctermfg=217  guibg=#41363c guifg=#ecbcbc
-	hi link diffAdded			   diffAdd
-	hi link diffChanged			   diffChange
-	hi link diffRemoved			   diffDelete
+	hi diffAdd        ctermbg=NONE ctermfg=10   guibg=#437019 guifg=#D2EBBE
+	hi diffChange     ctermbg=NONE ctermfg=159  guibg=#2b5b77 guifg=NONE
+	hi diffDelete     ctermbg=NONE ctermfg=162  guibg=#700009 guifg=#40000A
+	hi DiffText       ctermbg=237  ctermfg=217  guibg=#000000 guifg=#8fbfdc gui=reverse
+
+	" Patch files
+	hi diffAdded      ctermbg=NONE ctermfg=10   guibg=NONE    guifg=#8bc34a
+	hi diffChanged    ctermbg=NONE ctermfg=159  guibg=NONE    guifg=#ff5722
+	hi diffRemoved    ctermbg=NONE ctermfg=162  guibg=NONE    guifg=#f36c60
 
 	hi IncSearch      ctermbg=131  ctermfg=10   guibg=NONE	  guifg=#8bc34a
 	hi Search		  ctermbg=10   ctermfg=15   guibg=#8bc34a guifg=#ffffff
