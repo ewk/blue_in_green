@@ -21,8 +21,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi Normal         ctermbg=0   ctermfg=15   guibg=#263238 guifg=#ffffff
 	hi LineNr         ctermbg=0   ctermfg=109  guibg=#263238 guifg=#a7adba
 	hi FoldColumn     ctermbg=0   ctermfg=188  guibg=#263238 guifg=#b0bec5
-	hi link signColumn	FoldColumn
-	hi link Folded		FoldColumn
+	hi! link signColumn	FoldColumn
+	hi! link Folded		FoldColumn
 	hi MatchParen     ctermbg=45  ctermfg=0    guibg=#81d4fa guifg=#000000
 
 	" Common syntax groups for programming languages
@@ -31,10 +31,10 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	" Constant - green
 	hi Constant       ctermbg=NONE ctermfg=10  guibg=NONE guifg=#8bc34a
 	hi String         ctermbg=NONE ctermfg=10  guibg=NONE guifg=#9ccc65
-	hi link Character              Constant
-	hi link Number                 Constant
-	hi link Boolean                Constant
-	hi link Float                  Constant
+	hi! link Character              Constant
+	hi! link Number                 Constant
+	hi! link Boolean                Constant
+	hi! link Float                  Constant
 
 	" Variables (identifiers in Vim) are blue; function names are orange.
 	" Some Vim syntax files, including c.vim, do not define these groups.
@@ -43,31 +43,31 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 
 	" Statement - yellow
 	hi Statement      ctermbg=NONE ctermfg=228  guibg=NONE guifg=#fff59d gui=NONE
-	hi link Conditional            Statement
-	hi link Repeat				   Statement
-	hi link Label                  Statement
-	hi link Operator               Statement
-	hi link Keyword                Statement
-	hi link Exception			   Statement
+	hi! link Conditional            Statement
+	hi! link Repeat                 Statement
+	hi! link Label                  Statement
+	hi! link Operator               Statement
+	hi! link Keyword                Statement
+	hi! link Exception              Statement
 
 	" Preprocessor - gold
 	hi PreProc        ctermbg=NONE ctermfg=220  guibg=NONE guifg=#ffd700
-	hi link Include                PreProc
-	hi link Define                 PreProc
-	hi link Macro                  PreProc
-	hi link PreCondit              PreProc
+	hi! link Include                PreProc
+	hi! link Define                 PreProc
+	hi! link Macro                  PreProc
+	hi! link PreCondit              PreProc
 
 	" Type: int, long, char, etc. - aqua
 	hi Type           ctermbg=NONE ctermfg=159  guibg=NONE guifg=#84ffff gui=NONE
-	hi link StorageClass           Statement
-	hi link Structure              Statement
-	hi link Typedef                Type
+	hi! link StorageClass           Statement
+	hi! link Structure              Statement
+	hi! link Typedef                Type
 
 	" Special symbols - orange
 	hi Special        ctermbg=NONE ctermfg=208  guibg=NONE guifg=#ff9800
 	"hi SpecialChar
 	"hi Tag
-	hi link Delimiter              Special
+	hi! link Delimiter              Special
 	"hi SpecialComment
 	"hi Debug
 
@@ -91,7 +91,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi Cursor         ctermbg=208  ctermfg=0	guibg=#ff9800 guifg=#000000
 	hi CursorColumn   ctermbg=237  ctermfg=NONE guibg=#3a3a3a guifg=NONE
 	hi CursorLine     ctermbg=237  ctermfg=NONE guibg=#000000 guifg=NONE cterm=NONE
-	hi link CursorLineNr	String
+	hi! link CursorLineNr	String
 
 	" Diff mode
 	hi diffAdd        ctermbg=NONE ctermfg=10   guibg=#437019 guifg=#D2EBBE
@@ -141,12 +141,12 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi helpNormal       ctermbg=NONE ctermfg=NONE  guibg=NONE    guifg=NONE
 endif
 
-hi link htmlEndTag               htmlTagName
-hi link htmlLink                 Function
-hi link htmlSpecialTagName       htmlTagName
-hi link htmlTag                  htmlTagName
-hi link htmlBold                 Normal
-hi link htmlItalic               Normal
-hi link xmlTag                   Statement
-hi link xmlTagName               Statement
-hi link xmlEndTag                Statement
+hi! link htmlEndTag               htmlTagName
+hi! link htmlLink                 Function
+hi! link htmlSpecialTagName       htmlTagName
+hi! link htmlTag                  htmlTagName
+hi! link htmlBold                 Normal
+hi! link htmlItalic               Normal
+hi! link xmlTag                   Statement
+hi! link xmlTagName               Statement
+hi! link xmlEndTag                Statement
