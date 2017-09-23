@@ -2,13 +2,12 @@
 " Maintainer: Eddie Kovsky
 " Version: 1.0
 " License: GPLv2
-"
 
 if has("gui_running")
     set background=dark
 endif
 
-hi clear
+highlight clear
 
 if exists("syntax_on")
 	syntax reset
