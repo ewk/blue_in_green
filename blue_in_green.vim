@@ -87,10 +87,11 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	" Error: any erroneous construct
 	hi Error          ctermbg=NONE ctermfg=162  guibg=NONE guifg=#f36c60 cterm=reverse gui=reverse
 
+	" Cursor highlighting
 	hi Cursor         ctermbg=208  ctermfg=0	guibg=#ff9800 guifg=#000000
 	hi CursorColumn   ctermbg=237  ctermfg=NONE guibg=#3a3a3a guifg=NONE
-	hi CursorLineNr   ctermbg=NONE ctermfg=10   guibg=NONE    guifg=#9ccc65
-	hi CursorLine     ctermbg=237  ctermfg=NONE guibg=#3a3a3a guifg=NONE cterm=NONE
+	hi CursorLine     ctermbg=237  ctermfg=NONE guibg=#000000 guifg=NONE cterm=NONE
+	hi link CursorLineNr	String
 
 	" Diff mode
 	hi diffAdd        ctermbg=NONE ctermfg=10   guibg=#437019 guifg=#D2EBBE
