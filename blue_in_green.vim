@@ -100,7 +100,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi DiffText       ctermbg=237  ctermfg=217  guibg=#000000 guifg=#8fbfdc gui=reverse
 
 	" Patch files
-	hi diffAdded      ctermbg=NONE ctermfg=10   guibg=NONE    guifg=#8bc34a
+	hi! link diffAdded	Constant
 	hi diffChanged    ctermbg=NONE ctermfg=159  guibg=NONE    guifg=#ff5722
 	hi diffRemoved    ctermbg=NONE ctermfg=162  guibg=NONE    guifg=#f36c60
 
@@ -129,16 +129,16 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi SpellLocal guisp=#7cac7c guifg=NONE ctermfg=108  ctermbg=237 cterm=undercurl gui=undercurl
 
 	" Menus, etc ...
-	hi Directory        ctermbg=NONE ctermfg=159   guibg=NONE    guifg=#84ffff
+	hi! link Directory	Identifier
+	hi! link MoreMsg	Identifier
 	hi ErrorMsg         ctermbg=131  ctermfg=162   guibg=NONE    guifg=#f36c60
 	hi ModeMsg          ctermbg=0    ctermfg=228   guibg=#263238 guifg=#fff59d
-	hi MoreMsg          ctermbg=NONE ctermfg=159   guibg=NONE    guifg=#84ffff
 	hi Question         ctermbg=NONE ctermfg=117   guibg=NONE    guifg=#4dd0e1
 	hi Title            ctermbg=NONE ctermfg=141   guibg=NONE    guifg=#b39ddb
-	hi VertSplit        ctermbg=237  ctermfg=237   guibg=#3a3a3a guifg=#3a3a3a
-	hi WarningMsg       ctermbg=NONE ctermfg=208   guibg=NONE    guifg=#ff9800
+	hi! link VertSplit	TabLineFill
+	hi! link WarningMsg	Special
 	hi helpLeadBlank    ctermbg=NONE ctermfg=NONE  guibg=NONE    guifg=NONE
-	hi helpNormal       ctermbg=NONE ctermfg=NONE  guibg=NONE    guifg=NONE
+	hi! link helpNormal	helpLeadBlank
 endif
 
 hi! link htmlEndTag               htmlTagName
