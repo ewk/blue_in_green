@@ -114,7 +114,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi StatusLine     ctermbg=237  ctermfg=15   guibg=#3a3a3a guifg=#ffffff gui=NONE
 	hi StatusLineNC   ctermbg=237  ctermfg=15   guibg=#3a3a3a guifg=#ffffff cterm=NONE gui=italic
 
-	hi TabLine        ctermbg=237  ctermfg=15   guibg=#3a3a3a guifg=#ffffff
+	" TabLine - rarely used
+	hi! link TabLine	Pmenu
 	hi TabLineFill    ctermbg=237  ctermfg=237  guibg=#3a3a3a guifg=#3a3a3a
 	hi TabLineSel     ctermbg=15   ctermfg=240  guibg=#ffffff guifg=#555555
 
