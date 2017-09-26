@@ -68,7 +68,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 
 	" Blank, hidden, unprintable characters that don't exist inside the text
 	hi SpecialKey     ctermbg=NONE ctermfg=240  guibg=NONE guifg=#585858
-	hi NonText        ctermbg=NONE ctermfg=240  guibg=NONE guifg=#585858
+	hi! link NonText  SpecialKey
 	hi Ignore         ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 	hi Conceal        ctermbg=NONE ctermfg=15   guibg=NONE guifg=#ffffff
 
