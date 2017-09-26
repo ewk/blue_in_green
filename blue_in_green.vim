@@ -89,15 +89,15 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi! link CursorLineNr	String
 
 	" Diff mode
-	hi diffAdd        ctermbg=NONE ctermfg=10   guibg=#437019 guifg=#D2EBBE
-	hi diffChange     ctermbg=NONE ctermfg=159  guibg=#2b5b77 guifg=NONE
-	hi diffDelete     ctermbg=NONE ctermfg=162  guibg=#700009 guifg=#40000A
-	hi DiffText       ctermbg=237  ctermfg=217  guibg=#000000 guifg=#8fbfdc gui=reverse
+	hi diffAdd        ctermbg=64   ctermfg=231  guibg=#437019 guifg=#D2EBBE
+	hi diffChange     ctermbg=24   ctermfg=NONE guibg=#2b5b77 guifg=NONE
+	hi diffDelete     ctermbg=52   ctermfg=162  guibg=#700009 guifg=#40000A
+	hi DiffText       ctermbg=237  ctermfg=38   guibg=#000000 guifg=#8fbfdc cterm=reverse gui=reverse
 
 	" Patch files
 	hi! link diffAdded	Constant
 	hi diffChanged    ctermbg=NONE ctermfg=159  guibg=NONE    guifg=#ff5722
-	hi diffRemoved    ctermbg=NONE ctermfg=162  guibg=NONE    guifg=#f36c60
+	hi diffRemoved    ctermbg=NONE ctermfg=9    guibg=NONE    guifg=#f36c60
 
 	hi IncSearch      ctermbg=131  ctermfg=10   guibg=NONE	  guifg=#8bc34a
 	hi Search		  ctermbg=10   ctermfg=15   guibg=#8bc34a guifg=#ffffff
@@ -107,7 +107,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi PmenuSel       ctermbg=159  ctermfg=240  guibg=#84ffff guifg=#555555
 	hi PmenuThumb     ctermbg=159  ctermfg=159  guibg=#84ffff guifg=#84ffff
 
-	hi StatusLine     ctermbg=237  ctermfg=15   guibg=#3a3a3a guifg=#ffffff gui=NONE
+	hi StatusLine     ctermbg=237  ctermfg=15   guibg=#3a3a3a guifg=#ffffff cterm=NONE gui=NONE
 	hi StatusLineNC   ctermbg=237  ctermfg=15   guibg=#3a3a3a guifg=#ffffff cterm=NONE gui=italic
 
 	" TabLine - rarely used
@@ -127,7 +127,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	" Menus, etc ...
 	hi! link Directory	Identifier
 	hi! link MoreMsg	Identifier
-	hi ErrorMsg         ctermbg=131  ctermfg=162   guibg=NONE    guifg=#f36c60
+	hi ErrorMsg         ctermbg=NONE ctermfg=162   guibg=NONE    guifg=#f36c60
 	hi ModeMsg          ctermbg=0    ctermfg=228   guibg=#263238 guifg=#fff59d
 	hi Question         ctermbg=NONE ctermfg=117   guibg=NONE    guifg=#4dd0e1
 	hi Title            ctermbg=NONE ctermfg=141   guibg=NONE    guifg=#b39ddb
