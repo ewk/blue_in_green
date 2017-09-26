@@ -64,11 +64,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 
 	" Special symbols - orange
 	hi Special        ctermbg=NONE ctermfg=208  guibg=NONE guifg=#ff9800
-	"hi SpecialChar
-	"hi Tag
 	hi! link Delimiter              Special
-	"hi SpecialComment
-	"hi Debug
 
 	" Blank, hidden, unprintable characters that don't exist inside the text
 	hi SpecialKey     ctermbg=NONE ctermfg=240  guibg=NONE guifg=#585858
