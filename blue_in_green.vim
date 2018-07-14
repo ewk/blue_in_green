@@ -22,7 +22,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi FoldColumn     ctermbg=0   ctermfg=188  guibg=#263238 guifg=#b0bec5
 	hi! link signColumn	FoldColumn
 	hi! link Folded		FoldColumn
-	hi MatchParen     ctermbg=45  ctermfg=0    guibg=#81d4fa guifg=#000000
+	hi MatchParen     ctermbg=45  ctermfg=0    guibg=#56c3f4 guifg=#ffffff
 
 	" Common syntax groups for programming languages
 	" See :help group-name
