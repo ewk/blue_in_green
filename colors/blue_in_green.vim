@@ -1,6 +1,6 @@
 " Vim color file
 " Maintainer: Eddie Kovsky
-" Version: 1.0
+" Version: 1.01
 " License: GPLv2
 
 if has("gui_running")
@@ -89,9 +89,9 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 	hi! link CursorLineNr	String
 
 	" Diff mode
-	hi diffAdd        ctermbg=64   ctermfg=231  guibg=#437019 guifg=#D2EBBE
-	hi diffChange     ctermbg=24   ctermfg=NONE guibg=#2b5b77 guifg=NONE
-	hi diffDelete     ctermbg=52   ctermfg=162  guibg=#700009 guifg=#40000A
+	hi diffAdd        ctermbg=64   ctermfg=231  guibg=#437019 guifg=#8bc34a
+	hi diffChange     ctermbg=24   ctermfg=NONE guibg=#2b5b77 guifg=#b39ddb
+	hi diffDelete     ctermbg=52   ctermfg=162  guibg=#700009 guifg=#f36c60
 	hi DiffText       ctermbg=237  ctermfg=38   guibg=#000000 guifg=#8fbfdc cterm=reverse gui=reverse
 
 	" Patch files
